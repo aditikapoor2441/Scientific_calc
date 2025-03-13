@@ -142,14 +142,14 @@ void cube(){
 }
 
 void fact(){
-    int num,factorial=1;
+    unsigned long long num,factorial=1;
     cout<<"Enter number to get its factorial: ";
     cin>>num;
     if (num < 0) {
         cout << "Error! Factorial of a negative number is not defined.\n";
         return;
     }  
-    for(int i=1;i<=num;i++){
+    for(unsigned long long i=1;i<=num;i++){
         factorial=factorial*i;
     }          
     cout<<"Factorial is: "<<factorial<<endl;
